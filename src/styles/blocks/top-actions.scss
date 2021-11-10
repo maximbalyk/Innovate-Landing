@@ -1,0 +1,11 @@
+.top-actions {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+
+  @include onDesktop {
+    padding: 0 50px;
+  }
+}

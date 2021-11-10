@@ -1,0 +1,47 @@
+.contactUs {
+  display: flex;
+  justify-content: center;
+
+  &__title {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/contactUs.png);
+    margin-top: 50px;
+  }
+
+  &__text-Title {
+    padding-top: 15px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: $light-blue;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__button {
+    width: 178px;
+    height: 56px;
+    color: #fff;
+    background: $light-blue;
+    box-shadow: 0px 4px 10px rgba(55, 123, 169, 0.3);
+    border-radius: 10px;
+    border: none;
+    transition: 500ms;
+
+
+    &:hover {
+      transition: 500ms;
+      background-color: $dark-blue;
+      transform: scale(1.05);
+    }
+  }
+}

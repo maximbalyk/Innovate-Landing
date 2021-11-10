@@ -1,0 +1,18 @@
+.icon {
+  width: 24px;
+  height: 24px;
+
+  &--menu {
+    background-image: url(../images/menu.png);
+    transition: 500ms;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &--menu:hover {
+    transition: 500ms;
+    transform: scale(1.1);
+  }
+}
