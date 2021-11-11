@@ -17,6 +17,12 @@
   }
 }
 
+@mixin onWideDesktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin onMobile {
   @media (max-width: 767px) {
     @content;

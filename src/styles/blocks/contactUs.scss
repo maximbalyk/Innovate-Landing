@@ -23,8 +23,58 @@
 
   &__form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    padding: 0 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 154px;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 40px;
+
+    @media (min-width: 1120px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__input {
+    box-sizing: border-box;
+    margin-top: 40px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid $light-blue;
+    padding: 0 0 0 30px;
+    width: 100%;
+    max-width: 540px;
+
+    &:last-child {
+      @media (min-width: 1120px) {
+        max-width: none;
+      }
+    }
+
+    &--name {
+      background: url(../images/name.png) no-repeat scroll;
+    }
+    &--email {
+      background: url(../images/mail.png) no-repeat scroll;
+    }
+    &--company {
+      background: url(../images/company.png) no-repeat scroll;
+    }
+    &--phone {
+      background: url(../images/phone.png) no-repeat scroll;
+    }
+    &--message {
+      background: url(../images/message.png) no-repeat scroll;
+    }
   }
 
   &__button {
